@@ -3,5 +3,9 @@
 }
 
 .yokosen{
-    border-left:rgb(52, 208, 255)
+    border-left: 4mm solid rgb(52, 82, 255);
+}
+
+html{
+    font-size: 18px;
 }
