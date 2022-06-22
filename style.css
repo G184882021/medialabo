@@ -1,5 +1,5 @@
 .special{
-    background-color: rgb(255, 255, 128);
+    background-color: rgb(211, 211, 211);
 }
 
 .yokosen{
@@ -8,4 +8,18 @@
 
 html{
     font-size: 18px;
+}
+
+.delete-marker {
+    list-style: none;
+}
+
+.bottom-border{
+    border-bottom-width: 15px;
+    padding-bottom: 15px;
+    border-bottom: 4mm dotted rgb(52, 255, 228)
+}
+
+.padding-bottom{
+    padding-bottom: 35px;
 }
