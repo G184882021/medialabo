@@ -9,12 +9,40 @@
     <h1>「Webコンテンツ作成」の成果</h1>
     <h2>本テーマの学習目的</h2>
     <h2>プロジェクト課題について</h2>
+    <p>プロジェクト課題では、自身で考えたWeb アプリケーションの作成を実施する．</p>
+    <p>ここで表示するデータは「グルメ情報」にしました．</p>
     <p>プロジェクト課題で作成したページ: <a href="project.html">project.html</a></p>
     <h2>毎回の講義で作成したページ</h2>
     <ul>
       <li>
         <h3>第1回 HTMLによるWebページの構造の記述</h3>
-        <ol>
+        <p>今回はHTMLでのWebページの作成について学びました．</p>
+        <ul>
+          <li>
+            <h4>段落</h4>
+            <p>「p」要素は文章を1つの段落として構成した要素である．</p>
+            <p>「p」要素は一行で表示されるので，その中での半角スペース（空白文字）と改行はすべて1つの半角スペースとして認識される</p>
+          </li>
+          <li>
+            <h4>重要</h4>
+            <p>「strong」要素は重要であることを意味する要素であり，「<strong>太字にする</strong>」という意味はない</p>
+          </li>
+          <li>
+            <h4>強調</h4>
+            <p>「em」要素は強調することを意味する要素であり，「<em>斜体にする</em>」という意味はない</p>
+          </li>
+          <li>
+            <h4>見出し</h4>
+            <p>「h1,h2,h3...」要素は見出しのを意味する要素であり，番号が小さいほど大きな見出しとなる</p>
+            <p>「ul」要素は番号なし，「ol」要素は番号付きのリストを作る要素であり，リストの1つの項目は「li」要素として記述する</p>
+          </li>
+          <li>
+            <h4>リンク</h4>
+            <p>「a」要素はリンクを作る要素です．また「a」要素はhref,title,targetという属性を用いてリンクを作ります</p>
+          </li>
+        </ul>
+        <p>また次の課題に取り組みました．</p>
+        <li>
           <li>
             <h4 class = "yokosen">練習1-4: リスト</h4>
             <p>テキストだけで記述されていたレシピのHTMLを編集しました．見出しやリストなどの要素により文書の構造を記述しました．ここで使用したのはp要素, h1要素, ul要素, ol などです．</p>
@@ -33,20 +61,69 @@
           <li class = "special">
             <h4 class = "yokosen">課題1-3: index.html の作成</h4>
             <p>index.html はこのページの HTML ファイルです．この課題では index.html のテンプレートを作成しました．</p>
-            <h4 class = "yokosen">課題1-5: Web アプリケーションのページテンプレートの作成</h4>
-            <p>検索結果の HTMLのproject.html を作成しました．また，表示する結果はグルメ情報にしました．</p>
+          </li>
+          <li>
+            <h4 class = "yokosen">課題1-4: データを選ぶ（プロジェクト課題）</h4>
+            <p>表示する結果は「グルメ情報」を選びました．</p>
             <p>作成したファイル: <a href="project.html" title="project.htmlへのリンク" target="_blank">project.html</a></p>
           </li>
         </ol>
       </li>
       <li>
         <h3>第2回 CSSによる Web ページの装飾</h3>
+        <p>今回はCSSを用いたWebページの装飾方法について学びました．</p>
+        <ol>
+          <li>
+            <h4>装飾方法</h4>
+            <p>装飾方法はCSSのセレクタとプロパティを用いて行う．</p>
+            <p>セレクタに装飾したい要素を指定し，そのセレクタ内にプロパティを用いて装飾内容を決める．</p>
+            <p>プロパティの例として、以下のようなものがある．</p>
+            <ol>
+              <li>color: green</li>
+              <li>list-style-type: none;</li>
+              <li>font-weight: bold;</li>
+            </ol>
+            プロパティは把握しきれないほどあるため，自ら検索して調べる必要がある．
+          </li>
+          <li>
+            <h4>CSS を HTML に適用する方法</h4>
+            <p>CSSをHTMLに適用する方法は3つある</p>
+            <ol>
+              <li>外部スタイルシート（別ファイルにCSSを書くやり方）</li>
+              <li>内部スタイルシート（HTMLファイルと同じファイルにCSS書くやり方）</li>
+              <li>インラインスタイル（HTMLファイルと同じファイルの要素内に直接CSSを書くやり方）</li>
+            </ol>
+          </li>
+          <li>
+            <h4>ボックスモデル</h4>
+            <p>ページに要素を表示させるときに，要素は長方形の領域（ボックス）に描画される．</p>
+            <p>CSSで要素のボックスの設定を行える．</p>
+            <p>設定項目例</p>
+            <ol>
+              <li>border(ボックスの境界線)</li>
+              <li>padding（境界線から要素の内容までの距離）</li>
+              <li>margin（境界線から隣接する要素やページの端との距離）</li>
+              <li>width（幅）</li>
+              <li>height（高さ）</li>
+              <li>background（背景）</li>
+            </ol>
+          </li>
+
+          <li>
+            <h4>レイアウト</h4>
+            <p>ページ全体のレイアウトを大きく変更することが可能</p>
+            <p>フレックスボックス，グリッドレイアウト，フロートを用いる．</p>
+          </li>
+        </ol>
+        <p>また次の課題に取り組みました．</p>
+
+
         <ol>
           <li>
             <h4>練習2-3: CSSの修正</h4>
             <p>フォルダ practice-css 内にある style.css を修正しました．</p>
             <p>デバックの方法として，Wed開発ツールを使いました．</p>
-            <p>修正したファイル: practice.css/index.html</p>
+            <p>修正したファイル: <a href="practice-css/index.html" title="practice-css/index.htmlへのリンク" target="_blank">practice-css/index.html</a></p>
           </li>
           <li>
             <h4>課題2-1: medialabo/index.heml のCSSを作成する</h4>
@@ -56,12 +133,12 @@
           <li>
             <h4>課題2-2: project.html CSSの作成</h4>
             <p>project.html のCSSファイル style.css を作成しました．</p>
-            <p>編集したファイル: project.html</p>
+            <p>編集したファイル: <a href="project.html" title="project.htmlへのリンク" target="_blank">project.html</a></p>
           </li>
           <h4>課題2-3: medialabo/index.html を編集しよう</h4>
-          <p>medialabo/index.html はこのページのHTMLファイルです．</p>
-          <p>このHTMLファイルに第1回と第2回に学習した事柄を記述しました．</p>
+          <p>>medialabo/index.htmlに第1回と第2回に学習した事柄を記述しました．</p>
           <p>それに加えて、練習問題2-3，課題2-1，課題2-2，課題2-3も記述しました．</p>
+          <p>medialabo/index.html はこのページのHTMLファイルです．</p>
         </ol>
       </li>
       <h3>第3回 JavaScript の基本</h3>
