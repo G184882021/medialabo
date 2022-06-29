@@ -6,6 +6,10 @@
     border-left: 4mm solid rgb(52, 82, 255);
 }
 
+.bottom{
+    text-decoration: underline 1.5mm rgb(252, 255, 52);
+}
+
 html{
     font-size: 18px;
 }

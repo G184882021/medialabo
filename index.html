@@ -19,25 +19,25 @@
         <p>今回はHTMLでのWebページの作成について学びました．</p>
         <ul>
           <li>
-            <h4>段落</h4>
+            <h4><strong><em>段落</em></strong></h4>
             <p>「p」要素は文章を1つの段落として構成した要素である．</p>
             <p>「p」要素は一行で表示されるので，その中での半角スペース（空白文字）と改行はすべて1つの半角スペースとして認識される</p>
           </li>
           <li>
-            <h4>重要</h4>
+            <h4><strong><em>重要</em></strong></h4>
             <p>「strong」要素は重要であることを意味する要素であり，「<strong>太字にする</strong>」という意味はない</p>
           </li>
           <li>
-            <h4>強調</h4>
+            <h4><strong><em>強調</em></strong></h4>
             <p>「em」要素は強調することを意味する要素であり，「<em>斜体にする</em>」という意味はない</p>
           </li>
           <li>
-            <h4>見出し</h4>
+            <h4><strong><em>見出し</em></strong></h4>
             <p>「h1,h2,h3...」要素は見出しのを意味する要素であり，番号が小さいほど大きな見出しとなる</p>
             <p>「ul」要素は番号なし，「ol」要素は番号付きのリストを作る要素であり，リストの1つの項目は「li」要素として記述する</p>
           </li>
           <li>
-            <h4>リンク</h4>
+            <h4><strong><em>リンク</em></strong></h4>
             <p>「a」要素はリンクを作る要素です．また「a」要素はhref,title,targetという属性を用いてリンクを作ります</p>
           </li>
         </ul>
@@ -75,7 +75,7 @@
         <p>今回はCSSを用いたWebページの装飾方法について学びました．</p>
         <ul>
           <li>
-            <h4>装飾方法</h4>
+            <h4><strong><em>装飾方法</em></strong></h4>
             <p>装飾方法はCSSのセレクタとプロパティを用いて行う．</p>
             <p>セレクタに装飾したい要素を指定し，そのセレクタ内にプロパティを用いて装飾内容を決める．</p>
             <p>プロパティの例として、以下のようなものがある．</p>
@@ -84,10 +84,10 @@
               <li>list-style-type: none;</li>
               <li>font-weight: bold;</li>
             </ol>
-            プロパティは把握しきれないほどあるため，自ら検索して調べる必要がある．
+            <p>プロパティは把握しきれないほどあるため，自ら検索して調べる必要がある．</p>
           </li>
           <li>
-            <h4>CSS を HTML に適用する方法</h4>
+            <h4><strong><em>CSS を HTML に適用する方法</em></strong></h4>
             <p>CSSをHTMLに適用する方法は3つある</p>
             <ol>
               <li>外部スタイルシート（別ファイルにCSSを書くやり方）</li>
@@ -96,7 +96,7 @@
             </ol>
           </li>
           <li>
-            <h4>ボックスモデル</h4>
+            <h4><strong><em>ボックスモデル</em></strong></h4>
             <p>ページに要素を表示させるときに，要素は長方形の領域（ボックス）に描画される．</p>
             <p>CSSで要素のボックスの設定を行える．</p>
             <p>設定項目例</p>
@@ -111,7 +111,7 @@
           </li>
 
           <li>
-            <h4>レイアウト</h4>
+            <h4><strong><em>レイアウト</em></strong></h4>
             <p>ページ全体のレイアウトを大きく変更することが可能</p>
             <p>フレックスボックス，グリッドレイアウト，フロートを用いる．</p>
           </li>
@@ -138,27 +138,155 @@
           </li>
           <li class = "special delete-marker">
             <h4>課題2-3: medialabo/index.html を編集しよう</h4>
-            <p>>medialabo/index.htmlに第1回と第2回に学習した事柄を記述しました．</p>
+            <p>medialabo/index.htmlに第1回と第2回に学習した事柄を記述しました．</p>
             <p>それに加えて、練習問題2-3，課題2-1，課題2-2，課題2-3も記述しました．</p>
             <p>medialabo/index.html はこのページのHTMLファイルです．</p>
           </li>
         </ol>
       </li>
-      <h3>第3回 JavaScript の基本</h3>
-      
-      練習問題3-5: プログラムを書き足す（practice-js/jsintro.html へのリンクも設置すること）
-      編集したファイル:
-      練習問題3-6: オブジェクトの参照（practice-js/obj-practice.html へのリンクも設置すること）
-      編集したファイル:
-      課題3-1: 数当てゲームの作成（その1）（kazuate.html へのリンクも設置すること）
-      作成したファイル:
-      課題3-2: オブジェクトからデータを取り出す（プロジェクト課題）
-      編集したファイル:
-      課題3-3: index.html を編集しよう
+      <h3 class = "yokosen">第3回 JavaScript の基本</h3>
+      <p>今回はJavaScriptプログラムについて学びました．</p>
+      <ul class="bottom-border">
+        <li>
+          <h4><em>JavaScriptとは</em></h4>
+          <p>JavaScript は Web ページ上で複雑な機能を実現するプログラミング言語</p>
+          <p>Web ページを開いた直後や，ボタンを押したときに JavaScript プログラムが実行される</p>
+          <p>ページの自動更新やアニメーションなど動きのあるページを実現するために JavaScript プログラムを使う</p>
+        </li>
+        <li>
+          <h4><em>Java と JavaScript の違い</em></h4>
+          <p>Java は コンパイル言語 ．Java プログラムを実行するには javac でコンパイルしたのち，java で実行するという2段階の手順を踏む必要がある</p>
+          <p>JavaScript はインタプリタ言語 ． JavaScript プログラムは，そのまま 1行ずつ読み取りながら実行される．Java におけるコンパイルという一手間が必要ないため，手軽に実行とデバッグを繰り返すことができる．</p>
+          <p>逆にコンパイルがないため，エラーが起こっていても気づかないことがあったり，エラーの原因を見つけるのが難しい．</p>
+          <p class = "bottom">JavaScript の特徴</p>
+          <ol>
+            <li>コンパイルの一手間がないため，プログラムを書いて実行するまでの作業が少なくて済む</li>
+            <li>間違ったプログラムを実行すると実行時エラーが発生します．コンパイルエラーはない</li>
+            <li>実行中に値の型が決まる（変数の型宣言をしなくてよい）</li>
+          </ol>
+        </li>
+        <li>
+          <h4><em>JavaScript を HTMLに適用する方法</em></h4>
+          <p>JavaScriptをHTMLに適用する方法は3つある</p>
+          <ol>
+            <li>内部の JavaScript（別ファイルにJavaScriptを書くやり方）</li>
+            <li>外部の JavaScript（HTMLファイルと同じファイルにJavaScript書くやり方）</li>
+            <li>インラインコード（HTMLファイルと同じファイルの要素内に直接JavaScriptを書くやり方）</li>
+          </ol>
+          <p>高機能のページを作りたいときには 外部のJavaScript がおすすめ</p>
+          <p>ちょっとしたコードを書きたいときは 内部のJavaScript がおすすめ</p>
+        </li>
+        <li>
+          <h4><em>コンソール</em></h4>
+          <p>Web開発ツール内にあり，そこに JavaScript の文や式を書くと，その場で実行して結果を表示してくれる</p>
+          <p>注意する点として，コンソールで実行した文や式はどこにも記録されない</p>
+        </li>
+        <li>
+          <h4><em>JavaScript プログラムの構文</em></h4>
+          <ol>
+            <li class = "delete-marker">
+              <p class = "bottom">変数宣言</p>
+              <ol  class = "delete-marker">
+                <li>let 変数名;</li>
+              </ol>
+            </li>
+            <li class = "delete-marker">
+              <p class = "bottom">比較</p>
+              <ol class = "delete-marker">
+                <li>=== （等しい）, !==（等しくない）</li>
+              </ol>
+            </li>
+            <li class = "delete-marker">
+              <p class = "bottom">型変換</p>
+              <ol class = "delete-marker">
+                <li>Number(値)</li>
+              </ol>
+            </li>
+            <li class = "delete-marker">
+              <p class = "bottom">文字列</p>
+              <ol class = "delete-marker">
+                <li>'' , "" どちらでも良い</li>
+              </ol>
+            </li>
+            <li class = "delete-marker">
+                <p class = "bottom">関数（メソッド）</p>
+                <ol class = "delete-marker">
+                  <li>function メソッド名(x, y)</li>
+                </ol>
+            </li>
+            <li class = "delete-marker">
+               <p class = "bottom">for-of 構文</p>
+               <ol class = "delete-marker">
+                 <li>配列の要素1つずつに対して処理を実行</li>
+                 <li>for (let n of ns) ※nsは配列</li>
+               </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <h4><em>オブジェクト</em></h4>
+          <p>様々な種類のデータをひとまとめにしたデータ構造.</p>
+          <ul>
+            <li class = "delete-marker">オブジェクト　={</li>
+              <ul>
+                <li class = "delete-marker">メンバー名: 値,</li>
+                <li class = "delete-marker">メンバー名: 値，</li>
+                <li class = "delete-marker">...</li>
+                <li class = "delete-marker">メンバー名: 値，</li>
+              </ul>
+            <li class = "delete-marker">}</li>
+          </ul>
+          <p>という形で記述する．</p>
+          <p>また，「オブジェクト.メンバー名」で参照する．</p>
+        </li>
+        <li>
+          <h4><em>デバック</em></h4>
+          <p>デバックの方法として，Wed開発ツールので以下の方法を用いる</p>
+          <ol>
+            <li>エラー発生時にプログラムの実行を一時停止する（ブレークポイントの項目の「例外で停止」にチェックをつける）</li>
+            <li>ブレークポイントを設定してプログラムの実行を一時停止する（自らブレークポイントを設定する）</li>
+          </ol>
+        </li>
+      </ul>
 
-      <h3>第4回 フォームとイベント処理</h3>
-      <h3>第5回 Webページの動的な編集</h3>
-      <h3>第6回 Webページ作成演習</h3>
+
+      <ol>
+        <li class = "special delete-marker">
+          <h4>練習問題3-5: プログラムを書き足す</h4>
+          <p>練習3-4においてコンソールで実行したプログラムを practice-js/hello.js に書き足しました．</p>
+          <p>編集したファイル:<a href="practice-js/jsintro.html" title="practice-js/jsintro.htmlへのリンク" target="_blank">practice-js/jsintro.html</a></p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>練習問題3-6: オブジェクトの参照</h4>
+          <p>practice-js/obj-practice.js のコンソールに</p>
+          <ul>
+            <li>キャンパスの住所</li>
+            <li>D館の教室名</li>
+            <li>日本語の学科名</li>
+          </ul>
+          <p>を出力するように，プログラムを書き足しました．</p>
+          <p>編集したファイル:<a href="practice-js/obj-practice.html" title="practice-js/obj-practice.htmlへのリンク" target="_blank">practice-js/obj-practice.html</a></p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>課題3-1: 数当てゲームの作成（その1）</h4>
+          kazuate/kazuate.html のコンソールに，数あてゲームを出力するようなプログラムを作成しました．
+          <p>作成したファイル:<a href="kazuate/kazuate.html" title="kazuate/kazuate.htmlへのリンク" target="_blank">kazuate/kazuate.html</a></p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>課題3-2: オブジェクトからデータを取り出す（プロジェクト課題）</h4>
+          <p>グルメ情報のテンプレート gourmet.js の一部の情報を，コンソールに出力するプログラムを作成しました．</p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>課題3-3: index.html を編集しよう</h4>
+          <p>index.htmlに第3回に学習した事柄を記述しました．</p>
+          <p>それに加えて、練習問題3-5，練習問題3-6，課題3-1，課題3-2，課題3-3も記述しました．</p>
+          <p>index.html はこのページのHTMLファイルです．</p>
+        </li>
+      </ol>
+
+      <h3 class = "yokosen">第4回 フォームとイベント処理</h3>
+      <h3 class = "yokosen">第5回 Webページの動的な編集</h3>
+      <h3 class = "yokosen">第6回 Webページ作成演習</h3>
     </ul>
   </body>
 </html>
