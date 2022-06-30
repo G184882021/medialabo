@@ -36,11 +36,12 @@ main h1{
 }
 
 h2{
-    border-bottom:rgba(229, 229, 230, 0.753) solid;
+    
 }
 
 .delete-marker {
     list-style: none;
+    border-bottom:rgba(229, 229, 230, 0.753) solid;
 }
 
 .yokosen{

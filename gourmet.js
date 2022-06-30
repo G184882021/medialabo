@@ -203,3 +203,31 @@ let data = {
 for (let n of data.results.shop) {
   console.log(n.name);
 }
+
+for (let n of data.results.shop) {
+  let h1 = document.createElement("h1");
+  h1.textContent = n.name;
+  let p = document.querySelector("p#a");
+  p.insertAdjacentElement('afterend',h1);
+  h1.classList.add("yokosen");
+  let ol = document.createElement("ol");
+  h1.insertAdjacentElement('afterend',ol);
+  let li = document.createElement("li");
+  li.textContent = "住所:"+ n.address;
+  ol.insertAdjacentElement('beforeend', li);
+  li.classList.add("delete-marker");
+
+  // let na = document.querySelector('h1#name');
+  // na.textContent = n.name;
+}
+
+/* <h1 class="yokosen" id="name"></h1>
+            <h5 class="circle">  ジャンル</h5>
+            <ol>
+                <li class="delete-marker"><h2>住所</h2></li>
+                <p></p>
+                <li class="delete-marker"><h2>予算</h2></li>
+                <p></p>
+                <li class="delete-marker"><h2>営業日時</h2></li>
+                <p></p>
+            </ol> */
