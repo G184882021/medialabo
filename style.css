@@ -1,5 +1,5 @@
 .special{
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(231, 231, 231);
 }
 
 .yokosen{
@@ -27,3 +27,44 @@ html{
 .padding-bottom{
     padding-bottom: 35px;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+  }
+  
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2.5;
+  }
+  
+  .box2 {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2.5;
+    grid-row-end: 3.5;
+  }
+  
+  /* .box3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  } */

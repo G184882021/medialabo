@@ -43,3 +43,6 @@ function hantei() {
     }
 
 }
+
+// let s = document.querySelector('span#name');
+// s.textContent = name;
