@@ -17,23 +17,7 @@
       <li class="delete-marker padding-bottom">
         <h3 class = "yokosen">第1回 HTMLによるWebページの構造の記述</h3>
         <p>今回はHTMLでのWebページの作成について学びました．</p>
-
-        <div class="wrapper">
-          <div class="box1">
-            <h4><strong><em>段落</em></strong></h4>
-            <p>「p」要素は文章を1つの段落として構成した要素である．</p>
-            <p>「p」要素は一行で表示されるので，その中での半角スペース（空白文字）と改行はすべて1つの半角スペースとして認識される</p>
-          </div>
-          <div class="box2"><h4><strong><em>重要</em></strong></h4>
-            <p>「strong」要素は重要であることを意味する要素であり，「<strong>太字にする</strong>」という意味はない</p></div>
-          <div class="box3">Three</div>
-          <div class="box4">Four</div>
-          <div class="box5">Five</div>
-        </div>
-        
-
-
-        <ul>
+        <ol>
           <li>
             <h4><strong><em>段落</em></strong></h4>
             <p>「p」要素は文章を1つの段落として構成した要素である．</p>
@@ -56,7 +40,7 @@
             <h4><strong><em>リンク</em></strong></h4>
             <p>「a」要素はリンクを作る要素です．また「a」要素はhref,title,targetという属性を用いてリンクを作ります</p>
           </li>
-        </ul>
+        </ol>
         <p class="bottom-border">また次の課題に取り組みました．</p>
 
         <ol>
@@ -89,7 +73,7 @@
       <li class="delete-marker padding-bottom">
         <h3 class = "yokosen">第2回 CSSによる Web ページの装飾</h3>
         <p>今回はCSSを用いたWebページの装飾方法について学びました．</p>
-        <ul>
+        <ol>
           <li>
             <h4><strong><em>装飾方法</em></strong></h4>
             <p>装飾方法はCSSのセレクタとプロパティを用いて行う．</p>
@@ -131,7 +115,7 @@
             <p>ページ全体のレイアウトを大きく変更することが可能</p>
             <p>フレックスボックス，グリッドレイアウト，フロートを用いる．</p>
           </li>
-        </ul>
+        </ol>
         <p class="bottom-border">また次の課題に取り組みました．</p>
 
 
@@ -162,13 +146,10 @@
       </li>
       <h3 class = "yokosen">第3回 JavaScript の基本</h3>
       <p>今回はJavaScriptプログラムについて学びました．</p>
-      <ul class="bottom-border">
-        <li>
-          <h4><em>JavaScriptとは</em></h4>
-          <p>JavaScript は Web ページ上で複雑な機能を実現するプログラミング言語</p>
-          <p>Web ページを開いた直後や，ボタンを押したときに JavaScript プログラムが実行される</p>
-          <p>ページの自動更新やアニメーションなど動きのあるページを実現するために JavaScript プログラムを使う</p>
-        </li>
+      <h4>JavaScriptとは</h4>
+      <p>JavaScript とは Web ページ上で複雑な機能を実現するプログラミング言語である．Web ページを開いた直後や，ボタンを押したときに JavaScript プログラムが実行される．</p>
+      <p>ページの自動更新やアニメーションなど動きのあるページを実現するために JavaScript プログラムを使う．</p>
+      <ol>
         <li>
           <h4><em>Java と JavaScript の違い</em></h4>
           <p>Java は コンパイル言語 ．Java プログラムを実行するには javac でコンパイルしたのち，java で実行するという2段階の手順を踏む必要がある</p>
@@ -263,7 +244,8 @@
             <li>ブレークポイントを設定してプログラムの実行を一時停止する（自らブレークポイントを設定する）</li>
           </ol>
         </li>
-      </ul>
+      </ol>
+      <p class="bottom-border">また次の課題に取り組みました．</p>
 
 
       <ol>
@@ -301,6 +283,113 @@
       </ol>
 
       <h3 class = "yokosen">第4回 フォームとイベント処理</h3>
+      <p>今回はDOMを用いたJavaScriptプログラムについて学びました．</p>
+      <h4>DOMとは</h4>
+      <p>DOMとはWeb コンテンツを表現するデータ構造である．DOMでは要素，属性，テキストをノードとひとまとめに言うことができ，DOM の各ノードはオブジェクトとして利用できる．</p>
+      <p>DOM を使用することにより，プログラムによって，Webコンテンツの内容を読み取ったり，コンテンツに変更を加えたりする処理が書けるようになる．</p>
+      <p>例えば，p 要素のノードをオブジェクトとして取得するようなプログラムを書くことができる．</p>
+
+      <ol>
+        <li>
+          <h4>DOM のインターフェース</h4>
+          <ul>
+            <li>
+              <h4><em>要素の検索</em></h4>
+              <p>document.querySelector('p');　HTML の中の一番初めの p 要素を一つ検索</p>
+              <p>document.querySelectorAll('p');　すべての p 要素を検索</p>
+              <p>()内を('li#definition')とすると，definition を持つ li 要素を検索</p>
+            </li>
+            <li>
+              <h4><em>新しい要素の作成・追加(流れ)</em></h4>
+              <p>let p1 = document.createElement('p');　 p 要素を作成，p1に代入</p>
+              <p>p1.textContent = (内容); 　p1 のテキストを設定</p>
+              <p>h2.insertAdjacentElement('afterend', p1);　h2の下に p1 を追加</p>
+              <p>※あらかじめh2 要素をquerySelectorで検索する必要がある</p>
+            </li>
+            <li>
+              <h4><em>DOMを用いた繰り返し要素</em></h4>
+              <p>for-of 構文を使って繰り返す．DOMにより追加場所やテキスト内容を変更することが出来る</p>
+            </li>
+            <li>
+              <h4><em>要素の削除</em></h4>
+              <p>p1.remove() 　検索した p1 を削除</p>
+            </li>
+            <li>
+              <h4><em>クラスを検索・追加・削除</em></h4>
+              <p>e.classList.contains(クラス名); 　要素 e がクラス名を持つか調べる</p>
+              <p>e.classList.add(クラス名); 　要素 e にクラス名を追加</p>
+              <p>e.classList.remove(クラス名) 　要素 e からクラス名を削除</p>
+            </li>
+            <li>
+              <h4><em>要素の見た目の設定</em></h4>
+              <p>e.style.プロパティ名 =  …；　CSS の設定ができる</p>
+              <p>要素の見た目の設定をたくさん行うときには，CSS ファイルと classList を使う方法がお勧め</p>
+            </li>
+            <li>
+              <h4><em>属性を設定・参照</em></h4>
+              <p>e.setAttribute(属性名, 属性値) 　要素 e の属性を設定</p>
+              <p>e.getAttribute(属性名) 　要素 e の属性値を参照</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>div 要素と span 要素</h4>
+          <p>div 要素と span 要素は「コンテナ」とあり，中に何かを入れる容れ物といった意味合いである．</p>
+          <p>JavaScript プログラムによって要素を作るときに，役立つ．</p>
+          <p>使用例は以下の2つである．</p>
+          <ul>
+            <li>HTML にあらかじめ要素を設置しておき，あとで空欄に書き込んでもらう</li>
+            <li>プログラムで div 要素を作る</li>
+          </ul>
+        </li>
+      </ol>
+      <p class="bottom-border">また次の課題に取り組みました．</p>
+
+
+      <ol>
+        <li class = "special delete-marker">
+          <h4>練習問題4-6: プログラムを組み込む</h4>
+          <p>新しいJavaScriptプログラム dom-demo.js を作成して，HTMLファイル dom-demo.html に組み込みました．</p>
+          <p>そして、練習問題4-5 で行った変更を適用しました．</p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>練習問題4-7: 7大洋のリストを追加する</h4>
+          <p>dom-demo.js の最後に7大洋のリストを表示するプログラムを追加しました．</p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>練習問題4-9: すべての h2 要素の背景色を変更する</h4>
+          <p>プログラムファイル practice-dom/dom-demo.js に見出し文字の背景が緑色に変わるプログラムを追加しました．</p>
+          <p>編集したファイル:<a href="practice-dom/dom-demo.html" title="practice-dom/dom-demo.htmlへのリンク" target="_blank">practice-dom/dom-demo.html</a></p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>練習問題4-11: プレースホルダーとしての div 要素と span 要素</h4>
+          <p>practice-domフォルダ に配置した div-span-demo1.html と div-span-demo1.js の内容を確認しました．</p>
+          <p>そして、div要素 と span要素 を「プレースホルダー」として使っていることを確認しました．</p>
+          <p>編集したファイル:<a href="practice-dom/div-span-demo1.html" title="practice-dom/div-span-demo1.htmlへのリンク" target="_blank">practice-dom/div-span-demo1.html</a></p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>練習問題4-12: 写真表</h4>
+          <p>practice-domフォルダ に配置した div-demo2.html と div-demo2.js の内容を確認しました．</p>
+          <p>そして、見栄えを良くするために practice-dom/div-demo2.html を編集し、 div-demo2.css をHTMLファイル 組み込みました．</p>
+          <p>編集したファイル:<a href="practice-dom/div-demo2.html" title="practice-dom/div-demo2.htmlへのリンク" target="_blank">practice-dom/div-demo2.html</a></p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>課題4-1: 数当てゲームのページを改良する</h4>
+          <p>kazuate.html には，結果表示のためのプレースホルダーを追加し、kazuate.js では出力先をコンソールではなく,HTML になるようなプログラムに修正しました．</p>
+          <p>修正したファイル:<a href="kazuate/kazuate.html" title="kazuate/kazuate.htmlへのリンク" target="_blank">kazuate/kazuate.html</a></p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>課題4-2: オブジェクトをページ上に表示する（プロジェクト課題）</h4>
+          <p>プロジェクト課題の JavaScriptプログラム を改良して，ページ上にデータを表示するようなプログラムに修正しました．</p>
+        </li>
+        <li class = "special delete-marker">
+          <h4>課題4-3: index.html を編集しよう</h4>
+          <p>index.htmlに第4回に学習した事柄を記述しました．</p>
+          <p>それに加えて、練習問題4-6，練習問題4-7，練習問題4-9，練習問題4-11，練習問題4-12，課題4-1，課題4-2，課題4-3も記述しました．</p>
+          <p>index.html はこのページのHTMLファイルです．</p>
+        </li>
+      </ol>
+
       <h3 class = "yokosen">第5回 Webページの動的な編集</h3>
       <h3 class = "yokosen">第6回 Webページ作成演習</h3>
     </ul>

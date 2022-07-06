@@ -210,15 +210,36 @@ for (let n of data.results.shop) {
   let p = document.querySelector("p#a");
   p.insertAdjacentElement('afterend',h1);
   h1.classList.add("yokosen");
+
   let ol = document.createElement("ol");
   h1.insertAdjacentElement('afterend',ol);
+
   let li = document.createElement("li");
-  li.textContent = "住所:"+ n.address;
+  li.textContent = "住所: "+ n.address;
   ol.insertAdjacentElement('beforeend', li);
   li.classList.add("delete-marker");
 
-  // let na = document.querySelector('h1#name');
-  // na.textContent = n.name;
+  li = document.createElement("li");
+  li.textContent = "予算: " + n.budget.name;
+  ol.insertAdjacentElement('beforeend',li)
+  li.classList.add("delete-marker");
+
+  li = document.createElement("li");
+  li.textContent = "営業時間: " + n.open;
+  ol.insertAdjacentElement('beforeend',li);
+  li.classList.add("delete-marker");
+
+  let a = document.createElement("a");
+  a.setAttribute("href",n.coupon_urls.pc);
+  a.textContent = "クーポンでのご予約はこちら";
+  ol.insertAdjacentElement("beforeend",a);
+
+  let h5 = document.createElement("h5");
+  h5.textContent = n.genre.name;
+  h1.insertAdjacentElement("afterend",h5);
+  h5.classList.add("circle");
+
+  ol.classList.add("bottom");
 }
 
 /* <h1 class="yokosen" id="name"></h1>
@@ -231,3 +252,29 @@ for (let n of data.results.shop) {
                 <li class="delete-marker"><h2>営業日時</h2></li>
                 <p></p>
             </ol> */
+
+  //           ol = document.createElement("ol");
+  // h1 = document.createElement("h1");
+  // h1.insertAdjacentElement('afterend',ol);
+  // li = document.createElement("li");
+  // li.textContent = "予算:" + n.budget.name;
+  // ol.insertAdjacentElement('beforeend',li)
+  // li.classList.add("delete-marker");
+
+  // for (let n of data.results.shop) {  
+  //     let ol = document.createElement("ol");
+  //     let h1 = document.createElement("h1");
+  //     h1.insertAdjacentElement('afterend',ol);
+  //     let li = document.createElement("li");
+  //     li.textContent = "予算:" + n.budget.name;
+  //     ol.insertAdjacentElement('beforeend',li)
+  //     li.classList.add("delete-marker");
+  //   }
+
+  // let na = document.querySelector('h1#name');
+  // na.textContent = n.name;
+
+  //ol = document.createElement("ol");
+  //ol = document.querySelector("ol");
+  //h1 = document.createElement("h1");
+  //h1.insertAdjacentElement('afterend',ol);

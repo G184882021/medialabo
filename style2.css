@@ -40,10 +40,17 @@ h2{
 }
 
 .delete-marker {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     list-style: none;
     border-bottom:rgba(229, 229, 230, 0.753) solid;
 }
 
 .yokosen{
     border-left: 4mm solid rgb(255, 217, 0);
+}
+
+.bottom{
+    margin-bottom: 45px;
 }
