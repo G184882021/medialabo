@@ -242,6 +242,14 @@ for (let n of data.results.shop) {
   ol.classList.add("bottom");
 }
 
+let b = document.querySelector('button');
+b.addEventListener('click', kekka);
+
+function kakka() {
+  let i = document.querySelector('input[name="mozi"]');
+	let y1 = i.value;
+ 
+}
 /* <h1 class="yokosen" id="name"></h1>
             <h5 class="circle">  ジャンル</h5>
             <ol>
