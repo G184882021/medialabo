@@ -1,13 +1,19 @@
 .special{
-    background-color: rgb(231, 231, 231);
+    padding: 1rem 2rem;
+    background-color: rgba(231, 231, 231, 0.575);
+    border-radius: 50px;
 }
 
 .yokosen{
-    border-left: 4mm solid rgb(52, 82, 255);
+    border-left: 3mm solid rgb(52, 82, 255);
+    border-radius: 5px;
 }
 
 .bottom{
     text-decoration: underline 1.5mm rgb(252, 255, 52);
+}
+.bottom2{
+  text-decoration: underline 0.8mm rgba(55, 0, 255, 0.452);
 }
 
 html{
@@ -18,14 +24,36 @@ html{
     list-style: none;
 }
 
-.bottom-border{
-    border-bottom-width: 15px;
-    padding-bottom: 15px;
-    border-bottom: 4mm dotted rgb(52, 255, 228)
+.midasi{
+  padding: 1rem 2rem;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: #e4e4e4;
 }
 
 .padding-bottom{
     padding-bottom: 35px;
+}
+
+.border-background{
+  background-color: #4a21bd;
+  color: rgb(255, 255, 255);
+  padding: 50px 0 100px;
+  position: relative;
+}
+.border-background::before{
+  border-color: transparent transparent transparent #1cb4d3;
+  border-style: solid;
+  border-width: 50px 0 0 100vw;
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+}
+.border-background2 {
+  background-color: #1cb4d3;
+  color: rgb(0, 0, 0);
+  padding: 50px 0;
 }
 
 .wrapper {
