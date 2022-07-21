@@ -8,25 +8,28 @@ header, footer {
    
   }
 
-  .circle{
+  /* .circle{
     width: 70px;
     height: 30px;
     border-radius: 50px;
     background: #a5e3ff;
-    position:relative;
-}
+    
+} */
 
 h5{
     margin-top: 0px;
     margin-bottom: 0px;
 
-    position:absolute;
-    width: 100%;
+    
+    width: 18%;
     left: 0; 
-    top: calc(50% - 25px); 
+    
     text-align: center; 
     color: darkblue; 
     line-height: 30px;
+
+    border-radius: 50px;
+    background: #a5e3ff;
 }
 
 main h1{

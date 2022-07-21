@@ -4,16 +4,53 @@
         <meta charset="utf-8">
         <title>My test page</title>
         <link rel="stylesheet" href="style2.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
         <script src="gourmet.js" defer></script>
     </head>
     <body>
         <header>
         </header>
         <main>
+            <p>
+                <input type="radio" name="genre" id="genre1" value="G001">
+                <label for="genre1">居酒屋</label>
+                <input type="radio" name="genre" id="genre2" value="G002">
+                <label for="genre2">ダイニングバー・バル</label>
+                <input type="radio" name="genre" id="genre3" value="G003">
+                <label for="genre3">創作料理</label>
+                <input type="radio" name="genre" id="genre4" value="G004">
+                <label for="genre4">和食</label>
+                <input type="radio" name="genre" id="genre5" value="G005">
+                <label for="genre5">洋食</label>
+                <input type="radio" name="genre" id="genre6" value="G006">
+                <label for="genre6">イタリアン・フレンチ</label>
+                <input type="radio" name="genre" id="genre7" value="G007">
+                <label for="genre7">中華</label>
+                <input type="radio" name="genre" id="genre8" value="G008">
+                <label for="genre8">焼肉・ホルモン</label>
+                <input type="radio" name="genre" id="genre9" value="G009">
+                <label for="genre9">アジア・エスニック料理</label>
+                <input type="radio" name="genre" id="genre10" value="G010">
+                <label for="genre10">各国料理</label>
+                <input type="radio" name="genre" id="genre11" value="G011">
+                <label for="genre11">カラオケ・パーティ</label>
+                <input type="radio" name="genre" id="genre12" value="G012">
+                <label for="genre12">バー・カクテル</label>
+                <input type="radio" name="genre" id="genre13" value="G013">
+                <label for="genre13">ラーメン</label>
+                <input type="radio" name="genre" id="genre14" value="G014">
+                <label for="genre14">カフェ・スイーツ</label>
+                <input type="radio" name="genre" id="genre15" value="G015">
+                <label for="genre15">その他グルメ</label>
+                <input type="radio" name="genre" id="genre16" value="G016">
+                <label for="genre16">お好み焼き・もんじゃ</label>
+                <input type="radio" name="genre" id="genre17" value="G017">
+                <label for="genre17">韓国料理</label>
+            </p>
             <p id="a">
-                <label for="mozi">ジャンル: </label>
-                <input type="text" name="mozi" size="10">
-                <button>検索</button>
+                <!-- <label for="mozi">ジャンル: </label>
+                <input type="text" name="mozi" size="10"> -->
+                <button id="sendRequest">検索</button>
             </p>
         </main>
         <footer>
