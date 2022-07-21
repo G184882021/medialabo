@@ -238,6 +238,7 @@ function showResult(resp) {
 	console.log(data);
 
 	// data.x を出力
+
 	console.log(data.x);
 
   for (let n of data.results.shop) {
@@ -278,6 +279,11 @@ function showResult(resp) {
     h5.textContent = n.genre.name;
     h1.insertAdjacentElement("afterend",h5);
     h5.classList.add("circle");
+
+    // h5 = doument.createElement("h5");
+    // h5.textContent = n.sub_genre.name;
+    // h1.insertAdjacentElement("afterend",h5);
+    // h5.classList.add("circle");
   
     ol.classList.add("bottom");
   }
