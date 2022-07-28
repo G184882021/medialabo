@@ -4,6 +4,10 @@
   border-radius: 50px;
 }
 
+.yohaku{
+  padding: 1rem 2rem;
+}
+
 .yokosen {
   border-left: 3mm solid rgb(52, 82, 255);
   border-radius: 5px;
@@ -65,7 +69,19 @@ html {
   grid-auto-rows: 100px;
 }
 
-.box1 {
+.bc{
+  background-color:  #aab2f8;
+}
+
+.zentai {
+  display: grid;                      /* グリッドレイアウトにする*/
+  grid-template-columns: 8cm 12cm 12cm; /* 3列にする．幅は 1:2:2 の比率*/
+  grid-template-rows: 100px 100px;    /* 2行にする．高さはともに 100px */
+  grid-gap: 50px;                     /* 隣り合う行（列）の間隔を 10px に*/
+
+  width: 2000px;
+}
+/* .box1 {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -84,18 +100,5 @@ html {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-}
-
-/* .box1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.box1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
 } */
+
