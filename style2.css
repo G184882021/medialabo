@@ -3,10 +3,6 @@ header, footer {
     height: 2em;
     padding: 2em;
   }
-  
-  main{
-   
-  }
 
   /* .circle{
     width: 70px;
@@ -56,4 +52,17 @@ h2{
 
 .bottom{
     margin-bottom: 45px;
+}
+
+div.zentai {
+    display: grid;                      /* グリッドレイアウトにする*/
+    grid-template-columns: 1fr 1fr 1fr; /* 3列にする．幅は 1:2:2 の比率*/
+    grid-template-rows: 100px 100px;    /* 2行にする．高さはともに 100px */
+    grid-gap: 50px;                     /* 隣り合う行（列）の間隔を 10px に*/
+
+    width: 2000px;
+}
+
+.bottom2{
+    border-bottom: 5mm double rgba(16, 36, 124, 0.753);
 }

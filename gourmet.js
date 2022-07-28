@@ -200,11 +200,19 @@
 // };
 
 let b = document.querySelector('#sendRequest');
-b.addEventListener('click', sendRequest);
+b.addEventListener('click', sendRequest1);
 
 
 // 通信を開始する処理
-function sendRequest() {
+function sendRequest1() {
+  let kari = document.querySelector("div#x");
+  kari.remove();
+  let div = document.createElement("div");
+  div.setAttribute('id','x');
+  let p = document.querySelector("p#a");
+  p.insertAdjacentElement("afterend",div);
+
+
   //検索キーを取得
   let rs = document.querySelectorAll('input[name="genre"]');
   for (let r of rs) {
@@ -245,12 +253,19 @@ function showResult(resp) {
     console.log(n.name);
   }
   
+
+  // h1.setAttribute('id','x');
+  // let kari = doucument.querySelector('h1#x');
+  // kari.remove();
+
+
   for (let n of data.results.shop) {
     let h1 = document.createElement("h1");
     h1.textContent = n.name;
-    let p = document.querySelector("p#a");
-    p.insertAdjacentElement('afterend',h1);
+    let div = document.querySelector("div#x");
+    div.insertAdjacentElement('beforeend',h1);
     h1.classList.add("yokosen");
+    //h1.setAttribute('id','x');
   
     let ol = document.createElement("ol");
     h1.insertAdjacentElement('afterend',ol);
@@ -380,3 +395,4 @@ function finish() {
   //ol = document.querySelector("ol");
   //h1 = document.createElement("h1");
   //h1.insertAdjacentElement('afterend',ol);
+
